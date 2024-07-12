@@ -1,0 +1,36 @@
+.timer-app {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+
+  .timer-value-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    line-height: 16rem;
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: unset;
+      font-size: 50px;
+      line-height: 6rem;
+    }
+  }
+  
+  .timer-button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    button:nth-child(2) {
+      margin: 0 50px;
+
+      @media only screen and (max-width: 768px) {
+        margin: 0 20px;
+      }
+    }
+  }
+}
